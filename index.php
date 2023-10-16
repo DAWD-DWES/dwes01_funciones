@@ -18,6 +18,10 @@
                 <td class="conversion"><?php var_dump(round(-4.60)); ?></td>
             </tr>
             <tr>
+                <td>round(5.6793, 2)</td>
+                <td class="conversion"><?php var_dump(round(5.6793, 2)); ?></td>
+            </tr>
+            <tr>
                 <td>pow(2,4)</td>
                 <td class="conversion"><?php var_dump(pow(2,4)); ?></td>
             </tr>
@@ -73,12 +77,16 @@
                 <td class="conversion"><?php var_dump(count_chars("Hello World!", 3)); ?></td>
             </tr>
             <tr>
+                <td>count_chars("Hello World!", 1)</td>
+                <td class="conversion"><?php var_dump(count_chars("Hello World!", 1)); ?></td>
+            </tr>
+            <tr>
                 <td>explode(" ", "Hello world. It\'s a beautiful day.")</td>
                 <td class="conversion"><?php var_dump(explode(" ", "Hello world. It\'s a beautiful day.")); ?></td>
             </tr>
             <tr>
                 <td>htmlspecialchars("This is some <b>bold</b> text.")</td>
-                <td class="conversion"><?php var_dump(htmlspecialchars("This is some <b>bold</b> text.")); ?></td>
+                <td class="conversion"><?= htmlspecialchars("This is some <b>bold</b> text.") ?></td>
             </tr>
             <tr>
                 <td>ltrim("Hello World!", "Hello")</td>
@@ -131,18 +139,6 @@
             <tr>
                 <td>strlen("Hello")</td>
                 <td class="conversion"><?php var_dump(strlen("Hello")); ?></td>
-            </tr>
-            <tr>
-                <td>(string) 0</td>
-                <td class="conversion"><?php var_dump((string) 0); ?></td>
-            </tr>
-            <tr>
-                <td>(string) 012</td>
-                <td class="conversion"><?php var_dump((string) 012); ?></td>
-            </tr>
-            <tr>
-                <td>(string) 0.23</td>
-                <td class="conversion"><?php var_dump((string) 0.23); ?></td>
             </tr>
         </table>
     </body>

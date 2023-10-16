@@ -1,5 +1,5 @@
 body {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 h2 {
@@ -9,7 +9,7 @@ h2 {
 table {
     margin: 0 auto;
     border-spacing: 10px;
-    width: 50%;
+    width: 90%;
 }
 
 
@@ -35,6 +35,11 @@ td {
 
 .conversion:hover {
     opacity: 1;
+}
+
+pre {
+    font-family: "Times New Roman", courier, monospace;
+    font-size: 1em;
 }
 
 
