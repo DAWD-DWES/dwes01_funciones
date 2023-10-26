@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Conversión de valores entre tipos</title>
+        <title>Funciones de librería</title>
         <meta name="viewport" content="width=device-width">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="stylesheet.css">
@@ -30,8 +30,8 @@
                 <td class="conversion"><?php var_dump(intdiv(5, 2)); ?></td>
             </tr>
             <tr>
-                <td>decbin("140")</td>
-                <td class="conversion"><?php var_dump(decbin("140")); ?></td>
+                <td>decbin(140)</td>
+                <td class="conversion"><?php var_dump(decbin(140)); ?></td>
             </tr>
             <tr>
                 <td>ceil(0.40)</td>
@@ -45,8 +45,8 @@
                 <td>max(22, 14, 68, 18, 15)</td>
                 <td class="conversion"><?php var_dump(max(22, 14, 68, 18, 15)); ?></td>
             </tr><tr>
-                <td>mt_rand()</td>
-                <td class="conversion"><?php var_dump(mt_rand()); ?></td>
+                <td>mt_rand(0, 10)</td>
+                <td class="conversion"><?php var_dump(mt_rand(0, 10)); ?></td>
             </tr>
             <tr>
                 <td>pi()</td>
@@ -110,7 +110,7 @@
             </tr>
             <tr>
                 <td>str_repeat("Guau",13)</td>
-                <td class="conversion"><?php var_dump(str_repeat("Wow", 13)); ?></td>
+                <td class="conversion"><?php var_dump(str_repeat("Guau", 13)); ?></td>
             </tr>
             <tr>
                 <td>str_replace("mundo","tierra","Hola mundo!")</td>
@@ -140,7 +140,7 @@
                 <td>str_pad("Hola", 10, "_", STR_PAD_BOTH)</td>
                 <td class="conversion"><?php var_dump(str_pad("Hola", 10, "_", STR_PAD_BOTH)); ?></td>
             </tr>
-             <tr>
+            <tr>
                 <td>str_contains('Hola', 'ol')</td>
                 <td class="conversion"><?php var_dump(str_contains('Hola', 'ol')); ?></td>
             </tr>
@@ -161,8 +161,8 @@
                 <td class="conversion"><?php var_dump(strtolower("Hola, Mundo!")); ?></td>
             </tr>
             <tr>
-                <td>substr("Hola mundo",6)</td>
-                <td class="conversion"><?php var_dump(substr("Hola mundo", 6)); ?></td>
+                <td>substr("Hola mundo", 2, 3)</td>
+                <td class="conversion"><?php var_dump(substr("Hola mundo", 2, 3)); ?></td>
             </tr>
             <tr>
                 <td>strlen("Hola")</td>
